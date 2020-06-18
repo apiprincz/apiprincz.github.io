@@ -1,0 +1,115 @@
+.home {
+    padding: 140px  0px 0px 40px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+
+    &__container {
+        width: 38%;
+        padding-top:40px;
+
+        &-wide {
+            width: 60%;
+        }
+
+        & h5{
+            text-align: left;
+            font: 18px Segoe UI Regular;
+            letter-spacing: 0.5px;
+            color: #6E2169;
+            
+        }
+
+        & h1 {
+            font: 40px Segoe UI Semibold ;
+            letter-spacing: 0px;
+            margin: 0;            
+        }
+
+        & span {
+           color:  #6E2169;
+        }
+        & > div {
+            display: flex;
+            padding: 10px 0px;
+        }
+    }
+
+    &__text {
+        padding: 10px 0px;
+    }
+    &__button {
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+    }
+    &__bottom {
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        & > div {
+            width: 43%;
+            
+        }
+
+        & img{
+            width: 100%;
+           
+        }
+    }
+    &__packages{
+        position: relative;
+        width: 100%;
+        & > div {
+            position: absolute;
+            right:0;
+            width:70%;
+
+            &.home__box-wide {
+                width: 100%;
+            }
+        }
+        & img {
+            width: 100%;
+        }
+    }
+    &__box {
+        /* display: none; */
+        opacity: 0;
+        transition: all 2s ease-in;
+        transition-delay: 1s;
+    }
+    &__show {
+        opacity: 1;
+        transition: all 2s ease-in;
+        transition-delay: 1s;
+
+        &-image {
+            opacity: 1;
+        }
+    }
+    &__pagination {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > div {
+            margin: 0px 3px;
+            width: 10px;
+            height: 10px;
+            border-radius:50%;
+            border:1px solid #6E2169;
+            transition: all 2s ease-in;
+            transition-delay: 1s;
+        }
+        &-bg {
+            background:#6E2169 ;
+            transition: all 2s ease-in;
+
+            transition-delay: 1s;
+
+        }
+    }
+
+}

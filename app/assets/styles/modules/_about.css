@@ -1,0 +1,101 @@
+.about {
+    padding-top: 100px;
+    margin: 0 auto;
+
+    &  > div {
+        display: flex;
+        margin:0 auto;
+        align-items:center;
+        justify-content:space-around;
+        flex-wrap:wrap;
+        position: relative;
+    }
+
+    &-container{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
+       
+        & h1 {
+            font: 24px Segoe UI bold;
+
+            &:after {
+                content:  '';
+                
+                /* vertical-align:50%; */
+                display: inline-block;
+                /* background-image:url('../../../assets/images/vision.svg'); */
+                background-size:100%;
+                width: 30px;
+                height: 25px;
+                margin-left:10px;
+                background-repeat:no-repeat;
+              
+            }
+        }
+        & h3 {
+            font: 16px Segoe UI Semibold;
+            
+        }
+        & p {
+            font: 16px Segoe UI regular;
+
+        }
+
+        & > .vision{
+           
+            display: flex;
+            align-items: center;
+        
+        &:after {
+            content:  '';
+            background-image:url('../../../assets/images/vision.svg');   
+        }
+    }
+        & > .mission{
+           
+            display: flex;
+            align-items: center;
+        
+        &:after {
+            content:  '';
+            background-image:url('../../../assets/images/mission.svg');   
+        }
+    }
+        & > .value{
+           
+            display: flex;
+            align-items: center;
+        
+        &:after {
+            content:  '';
+            background-image:url('../../../assets/images/value.svg');   
+            width:47px;
+        }
+    }
+
+    }
+
+    &-divider {
+        padding: 10px 0px;
+    }
+    &-hero {
+        background: white;
+        padding: 0px 10px;
+
+        & h2 {
+            font: 24px Segoe UI bold;
+            color:#6E2169;
+        }
+    }
+    &-hr{
+        width: 95%;
+        position: absolute;
+        top: 50%;
+        display: block;
+        z-index: -1;
+        /* background: red; */
+    }
+
+}
