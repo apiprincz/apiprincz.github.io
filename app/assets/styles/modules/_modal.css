@@ -1,0 +1,77 @@
+.modal {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    /* height: 100%; */
+    background: #000000 0% 0% no-repeat padding-box;
+    
+    
+    &-show {
+    opacity: 0.85;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    animation-duration: 1.5s;
+        animation-iteration-count:step;
+    transform-origin: top;
+    animation-name: bounce-7;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+
+    }
+
+    &-hide {
+        animation-duration: 2s;
+        animation-iteration-count:step;
+    transform-origin: bottom;
+    animation-name: bounce-up;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);        
+    }
+    &-content {
+        width: 36%;
+        margin:0 auto;
+        text-align:center;
+        color:#6E2169;
+        background:#FFFFFF;
+        padding:20px 0px 10px;
+        position: absolute;
+        top:50%;
+        right:50%;
+        transform:translate(50%, -50%);
+        border-radius:20px;
+
+        & h1 {
+            font:16px Segoe UI Regular ;
+            letter-spacing: 0.2px;
+            line-height: 40px;
+        }
+        a {
+            color:#6E2169;
+        }
+
+    }
+
+}
+
+@keyframes bounce-7 {
+    0%   { transform:      translateY(-100vh
+    ); }
+    10%  { transform:   translateY(0); }
+    30%  { transform:   translateY(-170px); }
+    
+    /* 35%  { transform:  translateY(0); } */
+    57%  { transform:     translateY(0px); }
+    64%  { transform:     translateY(0); }
+    100% { transform:    translateY(0); }
+}
+@keyframes bounce-up {
+    0%   { transform:      translateY(0
+    ); }
+    10%  { transform:   translateY(0); }
+    30%  { transform:   translateY(-100vh); }
+    50%  { transform:  translateY(-80vh); }
+    57%  { transform:     translateY(-100vh); }
+  80%  { transform:     translateY(-100vh); }
+    
+  
+    100% { transform:    translateY(-100vh); }
+}
